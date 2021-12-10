@@ -1,28 +1,25 @@
 import React from "react";
-import "../../styles/SideNews.scss";
+import "../../styles/OtherNews.scss";
 import { parseTime } from "../../scripts/parseTime";
 
-const SideNews = ({ article, index, mobileView, showImage }) => {
+const OtherNews = ({ article, index }) => {
   const date = () => parseTime(article.publishedAt, true);
 
   if (article) {
     return (
       <div className={`fp-cell fp-cell--${index}`}>
-        <div className="side-news-wrap">
+        <div className="other-news-wrap">
           <div className="news-details">
             <thin-print>{`${article.author || article.source.name} ● ${date()}`}</thin-print>
             <a href={article.url} target="_blank" rel="noreferrer" className="news-source">
               {article.source.name}
             </a>
             <news-title>{article.title}</news-title>
-            {!mobileView ? <img src={article.urlToImage} alt={"Image: " + article.title} /> : null}
           </div>
-        </div>
-        {mobileView ? (
-          <div className="news-image">
+          <div className="float-image">
             <img src={article.urlToImage} alt={"Image: " + article.title} />
           </div>
-        ) : null}
+        </div>
       </div>
     );
   } else {
@@ -30,4 +27,4 @@ const SideNews = ({ article, index, mobileView, showImage }) => {
   }
 };
 
-export default SideNews;
+export default OtherNews;

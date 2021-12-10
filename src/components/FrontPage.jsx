@@ -1,21 +1,20 @@
 import React from "react";
 import "../styles/FrontPage.scss";
 import CenterNews from "./News/CenterNews";
+import OtherNews from "./News/OtherNews";
 import SideNews from "./News/SideNews";
 
 const Home = ({ articles, bodySize }) => {
-  return (
-    articles.length && (
+  if (articles.length > 0 && bodySize) {
+    return (
       <div>
         {bodySize.width > 720 ? (
           <div className="container">
             <div className="frontpage">
               <div className="fp-cell fp-cell--1">
-                <SideNews article={articles[6]} index="A" />
-                <SideNews article={articles[7]} index="B" />
-                <SideNews article={articles[8]} index="C" />
-                <SideNews article={articles[9]} index="D" />
-                <SideNews article={articles[10]} index="E" />
+                <SideNews article={articles[5]} index="A" />
+                <SideNews article={articles[6]} index="B" />
+                <SideNews article={articles[7]} index="C" />
                 {/* <SideNews article={articles[11]} index="F" /> */}
               </div>
               <CenterNews article={articles[0]} index="2" titleFontSize="30px" />
@@ -28,15 +27,22 @@ const Home = ({ articles, bodySize }) => {
                 <CenterNews article={articles[3]} index="7" titleFontSize="20px" />
               </div>
             </div>
+            <div className="other-pages">
+              {articles.slice(8).map((xarticle, i) => {
+                return <OtherNews article={xarticle} index="xx" key={xarticle.title} />;
+              })}
+            </div>
           </div>
         ) : (
           articles.map((xarticle, i) => {
-            return <SideNews article={xarticle} index={i} showImage={true} key={xarticle.title} />;
+            return <SideNews article={xarticle} index={i} mobileView={true} key={xarticle.title} />;
           })
         )}
       </div>
-    )
-  );
+    );
+  } else {
+    return <div className="loading-text">Loading articles. Please wait..</div>;
+  }
 };
 
 export default Home;

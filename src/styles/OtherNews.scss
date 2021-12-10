@@ -1,0 +1,15 @@
+.other-news-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .news-details {
+    .news-source {
+      width: fit-content;
+    }
+  }
+
+  img {
+    width: 200px;
+  }
+}
