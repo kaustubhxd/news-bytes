@@ -1,6 +1,7 @@
 {
   "name": "news-byte",
   "version": "0.1.0",
+  "homepage": "https://itskaustubh.github.io/news-bytes",
   "private": true,
   "dependencies": {
     "@react-hook/resize-observer": "^1.2.5",
