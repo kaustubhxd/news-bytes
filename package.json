@@ -2,19 +2,13 @@
   "name": "news-byte",
   "version": "0.1.0",
   "homepage": "https://itskaustubh.github.io/news-bytes",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@react-hook/resize-observer": "^1.2.5",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
     "number-to-words": "^1.2.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "react-text-truncate": "^0.17.0",
-    "styled-components": "^5.3.3",
-    "web-vitals": "^1.0.1"
+    "react-scripts": "4.0.3"
   },
   "scripts": {
     "start": "react-scripts start  --host 0.0.0.0",
