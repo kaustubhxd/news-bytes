@@ -3,7 +3,7 @@ import FrontPage from "./components/FrontPage";
 import MastHead from "./components/MastHead";
 import { getNews } from "./scripts/getNews";
 import useResizeObserver from "@react-hook/resize-observer";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Article from "./components/Article";
 // import { offlineArticles } from "./content/articles";
 
@@ -26,7 +26,7 @@ const App = () => {
   }, []);
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router>
       <div ref={bodyRef}>
         {/* {bodySize && JSON.stringify({ width: bodySize.width, height: bodySize.height }, null, 2)} */}
         <MastHead articles={articles} />
