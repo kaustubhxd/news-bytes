@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/OtherNews.scss";
 import { parseTime } from "../../scripts/parseTime";
+import { Link } from "react-router-dom";
 
 const OtherNews = ({ article, index }) => {
   const date = () => parseTime(article.publishedAt, true);
@@ -14,11 +15,15 @@ const OtherNews = ({ article, index }) => {
             <a href={article.url} target="_blank" rel="noreferrer" className="news-source">
               {article.source.name}
             </a>
-            <news-title>{article.title}</news-title>
+            <Link to={`/article/${index}`}>
+              <news-title>{article.title}</news-title>
+            </Link>
           </div>
-          <div className="float-image">
-            <img src={article.urlToImage} alt={"Image: " + article.title} />
-          </div>
+          <Link to={`/article/${index}`}>
+            <div className="float-image">
+              <img src={article.urlToImage} alt={"Image: " + article.title} />
+            </div>
+          </Link>
         </div>
       </div>
     );
