@@ -26,7 +26,7 @@ const App = () => {
   }, []);
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div ref={bodyRef}>
         {/* {bodySize && JSON.stringify({ width: bodySize.width, height: bodySize.height }, null, 2)} */}
         <MastHead articles={articles} />
