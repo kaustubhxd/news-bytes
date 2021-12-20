@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/news-bytes/static/css/main.eec62898.chunk.css",
-    "main.js": "/news-bytes/static/js/main.19795c2b.chunk.js",
-    "main.js.map": "/news-bytes/static/js/main.19795c2b.chunk.js.map",
+    "main.js": "/news-bytes/static/js/main.629cb482.chunk.js",
+    "main.js.map": "/news-bytes/static/js/main.629cb482.chunk.js.map",
     "runtime-main.js": "/news-bytes/static/js/runtime-main.26b938e7.js",
     "runtime-main.js.map": "/news-bytes/static/js/runtime-main.26b938e7.js.map",
     "static/js/2.277c8628.chunk.js": "/news-bytes/static/js/2.277c8628.chunk.js",
     "static/js/2.277c8628.chunk.js.map": "/news-bytes/static/js/2.277c8628.chunk.js.map",
     "index.html": "/news-bytes/index.html",
+    "service-worker.js": "/news-bytes/service-worker.js",
+    "service-worker.js.map": "/news-bytes/service-worker.js.map",
     "static/css/main.eec62898.chunk.css.map": "/news-bytes/static/css/main.eec62898.chunk.css.map",
     "static/js/2.277c8628.chunk.js.LICENSE.txt": "/news-bytes/static/js/2.277c8628.chunk.js.LICENSE.txt"
   },
@@ -15,6 +17,6 @@
     "static/js/runtime-main.26b938e7.js",
     "static/js/2.277c8628.chunk.js",
     "static/css/main.eec62898.chunk.css",
-    "static/js/main.19795c2b.chunk.js"
+    "static/js/main.629cb482.chunk.js"
   ]
 }
