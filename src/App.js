@@ -8,6 +8,7 @@ import Article from "./components/Article";
 // import { offlineArticles } from "./content/articles";
 
 const App = () => {
+  // console.log(process.env.PUBLIC_URL);
   const [articles, setArticles] = useState([]);
   const bodyRef = useRef(null);
   const bodySize = useSize(bodyRef);
