@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "News Bytes",
+  "name": "Get latest news in an instant",
   "icons": [
     {
       "src": "favicon.ico",
