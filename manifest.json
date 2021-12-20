@@ -20,7 +20,7 @@
       "purpose": "maskable"
     }
   ],
-  "start_url": "https://itskaustubh.github.io/news-bytes/",
+  "start_url": "/news-bytes/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
