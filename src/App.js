@@ -5,7 +5,7 @@ import { getNews } from "./scripts/getNews";
 import useResizeObserver from "@react-hook/resize-observer";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Article from "./components/Article";
-// import { offlineArticles } from "./content/articles";
+import { offlineArticles } from "./content/articles";
 
 const App = () => {
   // console.log(process.env.PUBLIC_URL);
@@ -23,7 +23,7 @@ const App = () => {
         setServerError(true);
       }
     });
-    // setArticles(offlineArticles);
+    setArticles(offlineArticles);
   }, []);
 
   return (
